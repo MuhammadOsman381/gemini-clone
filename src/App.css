@@ -12,6 +12,9 @@ body{
 }
 
 
+  .paragraph{
+    overflow: auto;
+  }
 
   .paragraph::-webkit-scrollbar {
     width: 5px; 
@@ -63,3 +66,34 @@ body{
    .updatedhead{
     height: auto;
    }
+
+   .preprompt{
+    width: 19.5vw;
+    height: 20vh;
+    /* border: 1px solid grey ; */
+    align-items: center;
+    justify-content: center;
+   }
+
+   #parent{
+    overflow: auto;
+    gap: 1vw;
+    /* border: 1px solid grey ; */
+    border-radius: 0px;
+    padding: 1vw;
+    align-items: center;
+   }
+  
+   #parent::-webkit-scrollbar {
+    width: 5px; 
+  }
+    
+  #parent::-webkit-scrollbar-track {
+    background-color: transparent; 
+  }
+  
+  #parent::-webkit-scrollbar-thumb {
+    background-color: white; 
+    border-radius: 5px;
+  }
+

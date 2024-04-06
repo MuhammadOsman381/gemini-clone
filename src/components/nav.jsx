@@ -1,12 +1,17 @@
 import img1 from './logo.png'
+import React, { useRef } from 'react';
 import {motion} from 'framer-motion';
-function Nav(){
+import Main from './main';
+function Nav(props){
+    const divRef = useRef(null);
     return(
-        <div className=" border-b h-[11vh] w-auto flex items-center p-[4vh] max-sm:h-[0vh]">
-            <motion.h1  animate ={{y:[0,-15,0]}} transition={{duration:"3", delay:"0"}} className=" w-auto h-auto">
-                {/* <strong className="text-[1.7vw] ">Gemini</strong>  */}
+        <div className=" border-b h-[11vh] w-[100vw] mt-[-4vh]  flex items-center p-[4vh] max-sm:h-[3vh] max-sm:mt-[-3vh] gap-[2vh]">
+
+            <motion.div  animate ={{y:[0,-15,0]}} transition={{duration:"3", delay:"0"}} className=" w-auto h-auto">
+     
                 <img src={img1} alt="" className='w-[6vw] max-sm:w-[9vh]' />
-            </motion.h1>
+            </motion.div>
+           
         </div>
     )
 }
