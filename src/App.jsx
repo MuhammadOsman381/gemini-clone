@@ -8,9 +8,10 @@ function App() {
 
   return (
     <>
-         <Nav  />
+        <Nav  />
         {/* <Loader/> */}
           <Main />
+         
           
     </>
   )
