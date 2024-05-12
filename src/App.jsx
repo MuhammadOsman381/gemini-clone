@@ -9,8 +9,7 @@ function App() {
   return (
     <>
         <Nav  />
-        {/* <Loader/> */}
-          <Main />
+        <Main />
          
           
     </>
